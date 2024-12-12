@@ -1,0 +1,42 @@
+{
+  "name": "stock-analyzer-precdiction",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-scroll-area": "^1.2.1",
+    "@radix-ui/react-select": "^2.1.2",
+    "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "apexcharts": "^4.2.0",
+    "axios": "^1.7.9",
+    "chart.js": "^4.4.7",
+    "chartjs-chart-financial": "github:chartjs/chartjs-chart-financial",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.13.5",
+    "lightweight-charts": "^4.2.2",
+    "lucide-react": "^0.468.0",
+    "luxon": "^3.5.0",
+    "next": "15.1.0",
+    "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.13",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

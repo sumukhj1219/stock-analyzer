@@ -4,8 +4,7 @@ import Navbar from '@/components/Navbar'
 
 const DashboardLayout = ({children}) => {
   return (
-    <div className="flex flex-col h-screen">
-      <Navbar />
+    <div className="flex flex-col h-screen bg-neutral-800">
 
       <div className="flex flex-1">
         <div >

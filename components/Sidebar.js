@@ -1,31 +1,33 @@
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { IndianRupee } from 'lucide-react';
 
 const Sidebar = () => {
   const items = [
     {
+      id:'1',
       label: 'Dashboard',
       href: '/dashboard',
     },
     {
+      id:'2',
       label: 'Trading view',
       href: '/trading-view'
     },
     {
-      label: 'Settings ⚙️',
-      href: '/settings',
-    },
-    
+      id:'3',
+      label: 'Custom Strategy',
+      href:""
+    }
   ];
 
   return (
     <div className="flex h-screen">
-      <div className="bg-secondary w-52 p-4 shadow-lg overflow-y-auto flex flex-col justify-between">
-        {/* Top Section */}
+      <div className="bg-primary w-52 p-4 shadow-lg overflow-y-auto flex flex-col justify-between">
         <div>
           <div className="mb-6">
-            <h1 className="text-2xl font-bold text-primary flex items-center justify-center">Workspace 🏢</h1>
+            <h1 className="text-xl font-bold text-secondary flex items-center justify-center"><IndianRupee className='text-amber-500' />GuardianStocks</h1>
             <Separator orientation="horizontal" className="mt-3" />
           </div>
           <nav>
@@ -35,7 +37,7 @@ const Sidebar = () => {
                   <Link
                     href={item.href}
                     aria-label={item.label}
-                    className=" px-4 py-2 text-lg font-extrabold text-primary hover:bg-yellow-200 border-r-8 border-b-8 border-2 border-primary hover:text-primary flex items-center justify-center"
+                    className=" px-4 py-2 text-sm rounded-lg font-extrabold text-secondary hover:bg-yellow-200  hover:text-primary flex items-center"
                   >
                     {item.label}
                   </Link>
@@ -45,14 +47,10 @@ const Sidebar = () => {
           </nav>
         </div>
 
-        <div >
-        <Link
-                    href={'/'}
-                    aria-label={'logout'}
-                    className="block px-4 py-2 text-lg font-extrabold text-primary bg-red-400 hover:bg-red-700 border-r-8 border-b-8 border-2 border-primary hover:text-primary"
-                  >
-                    Logout
-          </Link>
+        <div className='flex items-center justify-center'>
+        <Button variant={'destructive'} size={'lg'}>
+          Logout
+        </Button>
         </div>
       </div>
     </div>
